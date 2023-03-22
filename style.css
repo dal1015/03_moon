@@ -1,0 +1,268 @@
+@import "reset.css";
+*::-webkit-scrollbar{
+    display: none;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.image_box {
+    position: relative;
+}
+
+.main_image_1 {
+    background-size: 10%;
+    opacity: 0.4;
+    animation: fadein 5s ease 3s;
+     -webkit-animation: fadein 3s; 
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+.title_box {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 20rem;
+    bottom: 0;
+    left: 0;
+}
+.univ_title_font {
+    font-weight: 900;
+    font-size: 4rem;
+    color: black;
+    font-family: sans-serif;
+    margin-left: 2rem;
+}
+.college_title_font {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    line-height: 3rem;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+}
+
+.intro_title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 2rem;
+    width: 500px;
+    margin-left: 4rem;
+}
+.intro_text_box {
+    width: 620px;
+    height: 100px;
+    left: 0;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    opacity: 0.7;
+}
+.intro_text {
+    width: 550px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    line-height: 160%;
+    margin-left: 6rem;
+    position: relative;
+    bottom: 75px;
+}
+
+.category {
+    width: 710px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 4rem;
+    margin-top: 4rem;
+}
+.category_intro{
+    width: 50px;
+    height: 80px;
+    background-color: brown;
+    top: 0;
+    margin-left: 1rem;
+    opacity: 0;
+}
+
+.category_box1{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    top: 0;
+}
+.category_box2{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 12rem;
+    top: 0;
+}
+.category_box3{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 21rem;
+    top: 0;
+}
+.category_box4{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 30rem;
+    top: 0;
+}
+.about:hover + .category_box1 {
+    content: '';
+    width: 600px;
+    height: 3px;
+    transition: 1.5s;
+    border-radius: 10px;
+}
+.about:hover{margin-left: 1rem; transition: 1s;}
+.archive:hover{margin-left: 1rem; transition: 1s;}
+.hobby:hover{margin-left: 1rem; transition: 1s;}
+.photo:hover{margin-left: 1rem; transition: 1s;}
+.archive:hover + .category_box2 {
+    width: 600px;
+    height: 3px;
+    transition: 1.5s;
+    border-radius: 10px;
+
+}
+.hobby:hover + .category_box3 {
+    width: 600px;
+    height: 3px;
+    transition: 1.5s;
+    border-radius: 10px;
+}
+.photo:hover + .category_box4 {
+    width: 600px;
+    height: 3px;
+    transition: 1.5s;
+    border-radius: 10px;
+}
+.category_text {
+    font-size: large;
+    font-weight: 100;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 0;
+    position: absolute;
+    margin-top: 0rem;
+    margin-left: 5rem;
+}
+.category_position1 {margin-top: 4rem; opacity: 0;}
+.category_position2 {margin-top: 13rem; opacity: 0;}
+.category_position3 {margin-top: 22rem; opacity: 0;}
+.category_position4 {margin-top: 31rem; opacity: 0;}
+.about:hover > .category_position1 {
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(-0.5rem);
+}
+.archive:hover > .category_position2 {
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(-0.5rem);
+}
+.hobby:hover > .category_position3 {
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(-0.5rem);
+}
+.photo:hover > .category_position4 {
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(-0.5rem);
+}
+a {color: black;}
+
+/*about*/
+
+.abouthome {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+.home_image_container{
+    width: 238.5px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.home_image_container input[type=radio]{
+    display: none;
+
+}
+.about_border {
+    width: 500px;
+    height: 450px;
+    border-top: solid 5px red;
+    border-bottom: solid 5px red;
+    position: absolute;
+    margin: 10% 0 0 10%;
+}
+
+/*archive .arc1_section input[id*="arc1_slide"]{ display: none;}*/
+
+
+.arc1_section input[id*="arc1_slide"] {
+    display: none;
+}
+
+.arc1_section .slidewrap {max-width:100%; margin: 0 auto; overflow: hidden;}
+.arc1_section .slidelist {white-space: nowrap; font-size: 0;}
+.arc1_section .slidelist > li {display: inline-block;vertical-align: middle; width: 100%;transition: all .5s;}
+.arc1_section .slidelist > li  > a{ display: block; position: relative;}
+.arc1_section .slidelist > li  > a img{ width: 100%;}
+.arc1_section .slidelist label{position: absolute;z-index: 8;top: 80%;transform: translateY(-50%);padding:50px;cursor: pointer;}
+.arc1_section .slidelist .left{left:30px; background: url(./left.png) center center / 100%;}
+.arc1_section .slidelist .right{right:30px; background: url(./right.png) center center / 100%;}
+.arc1_section [id="arc1_slide1"]:checked ~ .slidewrap .slidelist > li{transform: translateX(0%)}
+.arc1_section [id="arc1_slide2"]:checked ~ .slidewrap .slidelist > li{transform: translateX(-100%);}
+.arc1_section [id="arc1_slide3"]:checked ~ .slidewrap .slidelist > li{transform: translateX(-200%);}
+
+.hobbyhome {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 113%;
+    background-color: lightgrey;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(223,223,223,1) 12%); position: absolute; right: 0; z-index: -1;"
+    z-index: 10;
+}
