@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>portfolio</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="image_box">
+            <div class="main_image_1" style="width: 100%; height: 750px; overflow: hidden;"><img src="./mainphoto.jpg" alt="mainphoto" width="50%"></div>
+            <div class="title_box">
+                <img style="margin-left: 3rem; opacity: 0.8; margin-top: -20rem;margin-bottom: 1.5rem;",  src="./main_logo.png" alt="mainlogo" width="11%">
+                <div>
+                     <h1 class="univ_title_font">KOOKMIN UNIV.</h1>
+                     <h1 class="college_title_font">College of Desgin_Nara Moon</h1>
+                </div>
+                <div class="intro_title">
+                     <p>tel : 010-2504-xxxx</p>
+                     <p>e-mail : 03_moon@kookmin.ac.kr</p>
+                     <p>Yangcheon-gu, Seoul</p>
+                </div>
+                <div>
+                     <div class="intro_text_box"><img src="./main_quote.png" alt="mainquote" width="100%"></div>
+                     <div class="intro_text">
+                        안녕하세요. 국민대학교를 재학중인 22학번 문나라입니다. 이 홈페이지에서는 저의 간단한 자기소개와 저의 활동작품, 취미 등을 소개합니다! 
+                     </div> 
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <div class="category">
+                     <div>
+                        <li><a class="about" href="#abouthome">About
+                            <div class="category_text category_position1"> Who am I? Introdution about me.</div></a>
+                            <div class="category_box1"></div>
+                            <div class="category_intro"></div>
+                        </li>
+                    </div>
+                    <div>
+                        <li><a class="archive" href="#archivehome">Archive
+                                <div class="category_text category_position2"> My project archiving.</div></a>
+                            <div class="category_box2"></div>
+                            <div class="category_intro"></div>
+                        </li>
+                    </div>
+                    <div>
+                        <li><a class="hobby" href="#hobbyhome">Hobby
+                                <div class="category_text category_position3"> Some things I enjoy....</div></a>
+                            <div class="category_box3"></div>
+                            <div class="category_intro"></div>
+                        </li>
+                    </div>
+
+                </div>
+            </ul>
+        </div>
+        <div style=" color: gray; bottom: 2%; right: 2%; z-index: 6; position:fixed;">
+            <div>Instagram : @_dal1015</div>
+            <div>https://www.kookmin.ac.kr/user/index.do</div>
+        </div>
+        <!--About-->
+        <figure id="abouthome" class="abouthome">
+            <div class="about_border">
+                <h1 style="position: absolute; margin: 15% 0 0 15%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: lighter; font-size: 60px;">About</h1>
+                <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: light;font-size: 30px; line-height: 160%; 
+                position: absolute; margin: 20% 0 0 15% ">
+                    <br/>Name : 문나라
+                    <br/>Birth : 2003.10.15
+                    <br/>Like : 싫어하는 거 빼고 다
+                    <br/>Dislike : 교수님, 과제, 개강
+                </div>
+            </div>
+            <img src="./aboutphoto.png" alt="aboutphoto" style="position:absolute; width: 25%; right: 0; margin: 5% 10% 0 0; border-radius: 30% 5%;" >
+            <div style="width: 45%; height: 100%; background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(223,223,223,1) 12%); position: absolute; right: 0; z-index: -1;"></div>
+        </figure>
+        <!--Archive-->
+        <figure id="archivehome" style="position: absolute; margin-block-start: 51%;; width: 100%; height: 100%; background-color: rgb(233,233,233);">
+            <div style="position: relative; margin-left: 15%; margin-top: 10px;  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: lighter; font-size: 60px;">Archive</div>
+            <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ;font-size: 20px; line-height: 160%; 
+            position: relative; margin-left: 15%; margin-top: 10px;" >22년부터 해온 저의 작업물들을 아카이브해놓았습니다. 인스타그램에도 있어요!</div>
+            <div class="arc1_section">
+                <input type="radio" name="arc1_slide" id="arc1_slide1" checked>
+                <input type="radio" name="arc1_slide" id="arc1_slide2">
+                <input type="radio" name="arc1_slide" id="arc1_slide3">
+                <div class="slidewrap">
+                    <ul class="slidelist">
+                        <li>
+                            <a>
+                                <label for="arc1_slide3" class="left"></label>
+                                <img src="./photo1.png" >
+                                <label for="arc1_slide2" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <label for="arc1_slide1" class="left"></label>
+                                <img src="./photo2.png">
+                                <label for="arc1_slide3" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <label for="arc1_slide2" class="left"></label>
+                                <img src="./photo3.png">
+                                <label for="arc1_slide1" class="right"></label>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>>
+        </figure>
+        <figure id="hobbyhome" class="hobbyhome">
+            <div class="hobby_border">
+                <h1 style="position: relative; margin: 15% 0 0 15%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: lighter; font-size: 60px;">Hobby</h1>
+                <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: light;font-size: 20px; line-height: 160%; 
+                position: absolute; margin: 5% 0 0 15% ">
+                <div>요즘 저의 취미는 디저트 맛집 털기, 전시회 구경, 게임이에요.</div>
+                <div>다만 게임은 요즘 바빠서 잘 못함</div>
+                </div>
+                <img src="./hobby1.jpg" alt="hobby1" width="20%"style="position: relative; margin-top: -15%; margin-left : 55%;">
+                <img src="./hobby2.jpg" alt="hobby2" width="15%" style="position: absolute; right: 0; margin-right: 8%; margin-top: -15%;">
+                <img src="./hobby3.jpg" alt="hobby3" width="20%"style="position: absolute; right: 0; margin-right: 25%; margin-top: 13%;">
+                <img src="./hobby4.jpg" alt="hobby4" width="15%"style="position: absolute; right: 0; margin-right: 8%; margin-top: 5%;">
+           
+            </div>
+        </figure>
+    </body>
+    </html>
